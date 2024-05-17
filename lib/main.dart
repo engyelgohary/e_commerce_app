@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/ui/auth/Login/loginScreen.dart';
 import 'package:e_commerce_app/ui/splash/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: Splash.routeName,
           routes:{
-           Splash.routeName:(context) => Splash(),
+           Splash.routeName:(context) =>const Splash(),
+            LoginScreen.routeName:(context) =>const LoginScreen(),
           },
         );
       }
